@@ -36,7 +36,7 @@ Create a virtual environment.
 
 Clone the repo:
 
-`git clone https://github.com/sandeepsajan0/inventorybooksapp.git`
+    git clone https://github.com/sandeepsajan0/inventorybooksapp.git
 
 Install all requirements:
 
@@ -44,29 +44,15 @@ Install all requirements:
 
 You have to configure database for run server locally:
 
-In `bookstore/settings.py`
-uncomment
-
-`DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}`
-
-and comment
-`DATABASES = {}
-DATABASES['default'] = dj_database_url.config(conn_max_age=600)`
-
 Now you need to migrate the database:
 
-`python3 manage.py makemigrations`
+    python3 manage.py makemigrations
 
-`python3 manage.py migrate`
+    python3 manage.py migrate
 
 Now you can run the sever:
 
-`python3 manage.py runserver`
+    python3 manage.py runserver
 
 hurray! you app is running on: http://127.0.0.1:8000/
 
@@ -82,6 +68,4 @@ For template issues, go through `booklist.html` and `main.css`.
 
 For database or model information, go through `models.py`.
 
-**Live Demo**
 
-It is live on heroku. https://inventorybooksapp.herokuapp.com/
