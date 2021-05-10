@@ -40,7 +40,7 @@ Clone the repo:
 
 Install all requirements:
 
-`pip3 install -r requirements.txt`
+      pip3 install -r requirements.txt
 
 You have to configure database for run server locally:
 
